@@ -1,9 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: muti-container-pod
-  labels:
-    app: muti-container-pod
+  name: multi-container-pod
 spec:
   containers:
     - name: c1
