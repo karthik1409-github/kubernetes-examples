@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: muti-container-pod
+  labels:
+    app: muti-container-pod
+spec:
+  containers:
+    - name: c1
+      image: karthik1409docker/angularapps:v1
+      ports:
+        - containerPort: 4200   
+
+    - name: c2
+      image: karthik1409docker/angularapps:v2
+      ports:
+        - containerPort: 4200   
