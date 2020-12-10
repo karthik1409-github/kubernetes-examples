@@ -12,6 +12,6 @@ spec:
         - containerPort: 4200   
 
     - name: c2
-      image: karthik1409docker/angularapps:v2
+      image: karthik1409docker/nodeapps:v1
       ports:
-        - containerPort: 4200   
+        - containerPort: 3000
