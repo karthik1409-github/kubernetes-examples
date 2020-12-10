@@ -7,9 +7,11 @@ metadata:
 spec:
   containers:
     - name: c1
-      image: busybox
+      image: karthik1409docker/angularapps:v1
+      ports:
+        - containerPort: 4200   
 
     - name: c2
-      image: karthik1409docker/angularapps:v1
+      image: karthik1409docker/angularapps:v2
       ports:
         - containerPort: 4200   
