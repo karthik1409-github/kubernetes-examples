@@ -5,6 +5,10 @@ metadata:
   labels:
     app: nodeapp-useconfigmap
 spec:
+  volumes:
+    - name: example-configmap-volume
+      configMap:
+        name: example-configmap
   containers:
     - name: nodeapp-useconfigmap-container
       image: karthik1409docker/nodeapps:nodeapp-read-from-configmap
@@ -16,10 +20,7 @@ spec:
       envFrom:
         - configMapRef:
             name: example-configmap
-  volumes:
-    - name: example-configmap-volume
-      configMap:
-        name: example-configmap
+  
 
 
 
