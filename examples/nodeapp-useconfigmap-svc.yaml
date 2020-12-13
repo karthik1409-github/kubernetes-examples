@@ -1,19 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: angularapp-v2-svc
+  name: nodeapp-useconfigmap-svc
 spec:
   selector: 
-    app: webapp-v2
+    app: nodeapp-useconfigmap
   type: NodePort
   ports:
     - name: http
-      port: 3001
-      targetPort: 4200
+      port: 3002
+      targetPort: 3000
       nodePort: 30002
-  
-
-  
 
 
 
