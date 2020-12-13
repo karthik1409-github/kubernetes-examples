@@ -16,7 +16,7 @@ spec:
         - containerPort: 3000
       volumeMounts:
         - name: example-configmap-volume
-            mountPath: /etc/config
+          mountPath: /etc/config
       envFrom:
         - configMapRef:
             name: example-configmap
