@@ -4,4 +4,6 @@ metadata:
   name: example-configmap 
 data:
   #Configuration values can be set as key-value properties
-  MESSAGE: Hello from example-configmap
+  MESSAGE: KARTHIK-Hello from example-configmap
+
+
