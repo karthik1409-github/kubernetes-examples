@@ -7,6 +7,8 @@ spec:
     app: python-webapp
   type: LoadBalancer
   ports:
-    - nodePort: 31000
-      port: 3100
+    - port: 3100
       targetPort: 5000
+
+
+
