@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: python-webapp
-  replicas: 3
+  replicas: 4
   template:
     metadata:
       labels:
@@ -17,3 +17,6 @@ spec:
           image: karthik1409docker/pythonapps:python-webappv1
           ports:
             - containerPort: 5000
+
+
+
